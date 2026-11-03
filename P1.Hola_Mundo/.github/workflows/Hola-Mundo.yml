@@ -1,0 +1,13 @@
+name: Hola Mundo Workflow
+
+on:
+  push:   # Esta estructura indica qye se ejecute el codigo cuendo se hace un push al repo de github
+
+jobs:
+  saludar: #nombre del job que va  a ejecutarse
+    runs-on: ubuntu-latest # maquina virtual donde se van a ejecutar los comandos
+    steps:
+      - name: Imprimir saludo y rama actual
+        run: | # Esto hace que se entienda que se ejecuten uno detras de otro en diferentes lines, si lo quieres seguido &&
+          echo "Hola Mundo"
+          echo "La rama actual es: ${{ github.ref_name }}"
