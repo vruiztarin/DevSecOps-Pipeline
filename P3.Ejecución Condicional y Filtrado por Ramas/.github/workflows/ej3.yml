@@ -1,0 +1,33 @@
+name: Ejercicio 3 -Diferentes Ramas
+
+on:
+  push:
+
+env:
+  Rama1: "PRO" #Nos permite definir el entorno
+  Rama2: "PRE" #Nos permite definir el entorno
+
+jobs:
+  rama-pre:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar información del entorno
+        run: |
+          if [ "${{ github.ref_name }}" == "PRE" ]; then
+            echo "Nos encontramos en la rama ${{ github.ref_name }}"
+          else
+            exit 1 
+          fi
+
+  rama-pro:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar información del entorno
+        run: |
+          if [ "${{ github.ref_name }}" == "PRO" ]; then
+            echo "Nos encontramos en la rama ${{ github.ref_name }}"
+          else
+            exit 1 
+          fi
