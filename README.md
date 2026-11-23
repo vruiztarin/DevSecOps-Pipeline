@@ -13,10 +13,11 @@ Este repositorio contiene una serie de ejercicios prácticos para el aprendizaje
 
 ## 📂 Contenido del Repositorio
 
-* **`P1.Hola_Mundo/`**: Configuración básica e inicio del primer workflow en GitHub Actions.
+* **`Ejercicio 1`**: Configuración básica e inicio del primer workflow en GitHub Actions.
 * **`Ejercicio 2`**: Control de variables de entorno globales/job-level e inyección segura de secretos (`API_TOKEN`).
 * **`Ejercicio 3`**: Ejecución condicional de pasos y filtrado dinámico según la rama objetivo (`main`).
-
+* **`Ejercicio 4`**: Integración de Linter y Verificación de Código.
+* **`Ejercicio 5`**: Compilación y Gestión de Artefactos.
 ---
 
 ## 🛠️ Tecnologías Utilizadas
